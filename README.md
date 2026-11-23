@@ -45,7 +45,7 @@ python viewer/radar.py --port /dev/cu.usbserial-0001
 
 Use your actual serial device (`COM3`, for example, on Windows). Python must include Tk support. Python.org desktop distributions usually include it; Linux distributions may package it separately as `python3-tk`.
 
-Add `--csv readings.csv` to record. Existing files are never overwritten. Demo mode uses visibly labeled synthetic measurements and needs no connected board.
+Add `--csv readings.csv` to record. Existing files are never overwritten. Demo mode uses visibly labeled synthetic measurements and needs no connected board. To check the viewer and CSV recording together, run `python viewer/radar.py --demo --csv demo-readings.csv`. Close the viewer before opening the CSV.
 
 ## Sampling and protocol
 
